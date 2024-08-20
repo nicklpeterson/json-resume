@@ -1,6 +1,6 @@
 {
   "meta": {
-    "theme": "elegant"
+    "theme": "professional"
   },
   "basics": {
     "name": "Nick Peterson",
@@ -28,15 +28,15 @@
   },
   "education": [
     {
-      "endDate": "2018-01-09",
-      "startDate": "2021-01-05",
+      "startDate": "2018-09",
+      "endDate": "2021-07",
       "area": "Computer Science",
       "studyType": "Bachelors",
       "institution": "The University of British Columbia"
     },
     {
-      "endDate": "2011-01-09",
-      "startDate": "2015-01-05",
+      "startDate": "2011-09",
+      "endDate": "2015-05",
       "area": "Mathematics & Economics",
       "studyType": "Bachelors",
       "institution": "The University of Minnesota Duluth"
@@ -44,35 +44,20 @@
   ],
   "skills": [
     {
+      "name": "Languages",
       "keywords": [
-        "HTML",
-        "CSS",
-        "SCSS",
-        "Styled Components",
-        "Javascript",
         "Typescript",
-        "React",
-        "Next",
-        "Webpack",
-        "Module Federation"
-      ],
-      "level": "Senior",
-      "name": "Frontend"
-    },
-    {
-      "keywords": [
-        "Node",
-        "Deno",
+        "Javascript",
         "Kotlin",
         "Java",
-        "Micronaut",
-        "Spring",
-        "Mongo",
-        "Postgres",
-        "Redis"
-      ],
-      "level": "Senior",
-      "name": "Backend"
+        "CSS",
+        "SCSS",
+        "HTML"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": ["Next.js", "React", "Micronaut", "Spring"]
     },
     {
       "keywords": [
@@ -80,7 +65,7 @@
         "Terraform",
         "Fastly CDN",
         "Vela",
-        "Automated CI / CD"
+        "Automated CI/CD Pipelines"
       ],
       "level": "Senior",
       "name": "Devops"
@@ -92,7 +77,7 @@
       "name": "Target Corporation",
       "location": "Minneapolis, MN",
       "position": "Senior Software Engineer",
-      "startDate": "2020-05-05",
+      "startDate": "2021-08",
       "highlights": [
         "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. Including external, internal, and agent facing web apps. Our platform went live in June 2024 and is on track to facilitate over $250 million in revenue this year.",
         "Implemented User Interfaces using Next.JS, React, Typescript, React Query, and Webpack.",
@@ -111,8 +96,8 @@
       "name": "Lively Apps",
       "location": "Vancouver, BC",
       "position": "Full Stack Developer",
-      "startDate": "2020-01-01",
-      "endDate": "2021-01-08",
+      "startDate": "2020-01",
+      "endDate": "2021-09",
       "highlights": [
         "Developed and maintained apps currently available on the Atlassian marketplace for Confluence and Jira. Including Pocket Query, Task Reminder, Hide Elements, Usage Statistics for Confluence and more.",
         "Win second place in the 2020 Codegeist hackathon for the Lively Recorder.",
@@ -130,8 +115,8 @@
       "website": "https://www.garmin.com/en-US/",
       "name": "Garmin",
       "position": "Software Quality Assurance Intern",
-      "startDate": "2019-01-09",
-      "endDate": "2019-01-12"
+      "startDate": "2019-09",
+      "endDate": "2019-12"
     }
   ]
 }

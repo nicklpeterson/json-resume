@@ -122,19 +122,6 @@
     },
     {
       "highlights": [
-        "Taught the Java language and design patterns.",
-        "Assisted students with the design and development of capstone personal projects.",
-        "Graded assignments, quizzes and exams."
-      ],
-      "website": "https://www.ubc.ca/",
-      "pinned": true,
-      "name": "University of British Columbia",
-      "position": "Teaching Assistant",
-      "startDate": "2020-01-01",
-      "endDate": "2020-01-08"
-    },
-    {
-      "highlights": [
         "Designed and built an internal tool that automated the scraping of test data from Garmin devices, saving QA engineers hours of time each week.",
         "Authored and maintained well organized test cases",
         "Developed internal tools using Python and C++"

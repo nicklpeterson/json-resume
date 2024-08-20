@@ -1,6 +1,6 @@
 {
   "meta": {
-    "theme": "professional"
+    "theme": "elegant"
   },
   "basics": {
     "name": "Nick Peterson",
@@ -41,62 +41,69 @@
       "institution": "The University of Minnesota Duluth"
     }
   ],
-  "references": [
-    {
-      "reference": "Thomas was hired as a lead developer and, upon the leaving of our co-founder took over as CTO of Earbits. Thomas is, hands down, one of those A Players you hear of companies dying to hire. He is incredibly smart, not just at code but about everything from classical music to Chinese language and culture. Thomas is great to work with and, as a well established contributor to open source projects and several successful ventures, commands the respect of engineers at all levels. I would suggest doing anything you can to have him on your team.",
-      "name": "Joey Flores, Co-founder and CEO of Earbits, Inc."
-    },
-    {
-      "reference": "I've had the great pleasure of working with Thomas for the past three years at Earbits, and on a few side projects. Two years ago our CTO left on a moment's notice, Thomas saved our company by quickly stepping up to fill this role. He has been with our company through thick and thin and made serious personal sacrifices in order to help the company during tough times. He is a phenomenal hacker and a true team player. Highly recommended!",
-      "name": "Yotam Rosenbaum, SVP of Operations, Earbits, Inc."
-    },
-    {
-      "reference": "Thomas is an extremely talented engineer with a very broad range of skills and experience. From being a thought leader in the front-end community via backbonetutorials.com and cdnjs.com, to designing and implementing the API for cdnjs.com, working with Thomas has been fantastic learning experience. Thomas is truly a full stack develop, and his work output is incredible. If there is any opportunity to work with Thomas, I take it. He is the definition of an A player.",
-      "name": "Ryan Kirkman, Senior Software Engineer at Nerdwallet"
-    },
-    {
-      "reference": "On Thomas Davis... Hire this guy. Do not be fooled. Incredibly capable and fast. Plays well with others. Unbelievable at front-end work end programming but that is just the start. Visionary. Hire him before I do.",
-      "name": "Greg Davis"
-    }
-  ],
   "skills": [
     {
       "keywords": [
-        "HTML / JSX",
-        "SCSS / CSS / BEM / Styled Components",
-        "Javascript / Typescript",
-        "React / Next",
-        "Redux / Apollo"
+        "HTML",
+        "CSS",
+        "SCSS",
+        "Styled Components",
+        "Javascript",
+        "Typescript",
+        "React",
+        "Next",
+        "Webpack",
+        "Module Federation"
       ],
       "level": "Senior",
       "name": "Frontend"
     },
     {
-      "keywords": ["Node", "Ruby", "Python", "Postgres", "Redis", "Serverless"],
+      "keywords": [
+        "Node",
+        "Deno",
+        "Kotlin",
+        "Java",
+        "Micronaut",
+        "Spring",
+        "Mongo",
+        "Postgres",
+        "Redis"
+      ],
       "level": "Senior",
       "name": "Backend"
     },
     {
-      "keywords": ["AWS", "G Cloud", "Heroku", "Caching"],
+      "keywords": [
+        "Google Cloud",
+        "Terraform",
+        "Fastly CDN",
+        "Vela",
+        "Automated CI / CD"
+      ],
       "level": "Senior",
       "name": "Devops"
     }
   ],
-  "awards": [
-    {
-      "title": "Defender of the Internet",
-      "awarder": "Fight For The Future"
-    }
-  ],
   "work": [
     {
-      "summary": "Tokenized is a Bitcoin wallet for issuing, managing and trading digital tokens. I built out the front end which was packaged as an electron app. It was a difficult frontend to build because we store the users keys locally and used them to sign transactions and contracts.",
-      "website": "https://tokenized.com/",
-      "name": "Tokenized",
-      "location": "Melbourne",
-      "position": "Senior Javascript Developer",
+      "website": "https://target.com/",
+      "name": "Target Corporation",
+      "location": "Minneapolis, MN",
+      "position": "Senior Software Engineer",
       "startDate": "2020-05-05",
-      "highlights": ["React", "Redux", "SCSS", "Product"]
+      "highlights": [
+        "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. Including external, internal, and agent facing web apps. Our platform went live in June 2024 and is on track to facilitate over $250 million in revenue this year.", 
+        "Implemented User Interfaces using Next.JS, React, Typescript, React Query, and Webpack.", 
+        "Developed a PCI compliant micro-frontend that was built using Webpack Module Federation and deployed as a static javascript bundle to Google Cloud Platform.", 
+        "Designed and implemented frontend and backend performance monitoring and alerting patterns using InfluxDB, Kibana, Grafana, and Shuttle IO.",
+        "Developed REST API Microservices using Micronaut and Kotlin.",
+        "Led the production environment set up and roll out effort. We had a clean prouction go live with no major incidents.",
+        "Led the security development efforts including setting up frontend and backend controls to prevent known attack vectors. Prioritizing secure development from the beginning resulted in our PEN tests coming back with no major findings, saving us time and resources.",
+        "Designed and built a Kafka filtering service that allowed the team to test our data migration in a \"Go-Live\" environment while ensuring that production PI data would not leak into lower environments.",
+        "Supported the team through mentorship of Interns and Engineers.",
+        "Developed two side project tools, git1s and git-history, that are used by engineers throughout Target Tech to more effectively use Github."
+      ]
     },
     {
       "summary": "Blockbid is an Australian crypto currency exchange. I started off on the frontend but eventually became lead tech and worked on every moving piece of the exchange. I really enjoyed working with liquidity providers and connecting their platforms to help us achieve liquid markets.",

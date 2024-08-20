@@ -10,7 +10,7 @@
     "email": "nick.peterson@alumni.ubc.ca",
     "location": {
       "city": "Minneapolis",
-      "state": "Minnesota"
+      "region": "Minnesota"
     },
     "profiles": [
       {
@@ -93,9 +93,9 @@
       "position": "Senior Software Engineer",
       "startDate": "2020-05-05",
       "highlights": [
-        "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. Including external, internal, and agent facing web apps. Our platform went live in June 2024 and is on track to facilitate over $250 million in revenue this year.", 
-        "Implemented User Interfaces using Next.JS, React, Typescript, React Query, and Webpack.", 
-        "Developed a PCI compliant micro-frontend that was built using Webpack Module Federation and deployed as a static javascript bundle to Google Cloud Platform.", 
+        "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. Including external, internal, and agent facing web apps. Our platform went live in June 2024 and is on track to facilitate over $250 million in revenue this year.",
+        "Implemented User Interfaces using Next.JS, React, Typescript, React Query, and Webpack.",
+        "Developed a PCI compliant micro-frontend that was built using Webpack Module Federation and deployed as a static javascript bundle to Google Cloud Platform.",
         "Designed and implemented frontend and backend performance monitoring and alerting patterns using InfluxDB, Kibana, Grafana, and Shuttle IO.",
         "Developed REST API Microservices using Micronaut and Kotlin.",
         "Led the production environment set up and roll out effort. We had a clean prouction go live with no major incidents.",
@@ -131,7 +131,6 @@
       "position": "Software Quality Assurance Intern",
       "startDate": "2019-01-09",
       "endDate": "2019-01-12"
-
     }
   ]
 }

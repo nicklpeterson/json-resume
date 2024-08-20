@@ -10,7 +10,8 @@
     "email": "nick.peterson@alumni.ubc.ca",
     "location": {
       "city": "Minneapolis",
-      "region": "Minnesota"
+      "region": "Minnesota",
+      "countryCode": "US"
     },
     "profiles": [
       {

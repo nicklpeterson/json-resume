@@ -84,7 +84,7 @@
         "Developed a PCI compliant micro-frontend that was built using Webpack Module Federation and deployed as a static javascript bundle to Google Cloud Platform.",
         "Designed and implemented frontend and backend performance monitoring and alerting patterns using InfluxDB, Kibana, Grafana, and Shuttle IO.",
         "Developed REST API Microservices using Micronaut and Kotlin.",
-        "Led the production environment set up and roll out effort. We had a clean prouction go live with no major incidents.",
+        "Led the production environment set up and roll out effort. We had a clean production go live with no major incidents.",
         "Led the security development efforts including setting up frontend and backend controls to prevent known attack vectors. Prioritizing secure development from the beginning resulted in our PEN tests coming back with no major findings, saving us time and resources.",
         "Designed and built a Kafka filtering service that allowed the team to test our data migration in a \"Go-Live\" environment while ensuring that production PI data would not leak into lower environments.",
         "Supported the team through mentorship of Interns and Engineers.",

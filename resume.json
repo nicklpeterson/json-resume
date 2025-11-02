@@ -73,11 +73,22 @@
   ],
   "work": [
     {
+      "website": "https://www.samsung.com/us/smartthings/",
+      "name": "Samsung Smartthings",
+      "location": "Minneapolis, MN",
+      "position": "Senior Software Engineer",
+      "startDate": "2025-02",
+      "highlights":[
+        "Architected, developed and maintained microservices that power Samsungs Internernet of Things Platform for 2 million daily active users."
+      ]
+    },
+    {
       "website": "https://target.com/",
       "name": "Target Corporation",
       "location": "Minneapolis, MN",
       "position": "Lead Software Engineer",
       "startDate": "2021-08",
+      "endDate": "2025-01",
       "highlights": [
         "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. Including external, internal, and agent facing web apps. Our platform went live in June 2024 and is on track to facilitate over $250 million in revenue this year.",
         "Implemented User Interfaces using Next.JS, React, Typescript, React Query, and Webpack.",

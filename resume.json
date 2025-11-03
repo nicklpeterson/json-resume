@@ -3,6 +3,7 @@
     "name": "Nick Peterson",
     "label": "Full Stack Software Engineer",
     "image": "https://avatars.githubusercontent.com/u/45719932",
+    "summary": "Results-driven Software Engineer with over five years of experience designing and delivering large-scale, high-performance systems across e-commerce and IoT platforms. Skilled in building distributed microservices and cloud infrastructure using Kotlin, Micronaut, AWS, and Terraform, as well as modern front-end technologies including React, Next.js, and TypeScript. Known for collaborating across engineering, product, and design teams to deliver measurable business outcomes—such as facilitating $250M in annual gift card sales revenue at Target and improving reliability for millions of Samsung SmartThings users. Driven by a passion for learning, collaboration, and crafting scalable, maintainable systems.",
     "email": "nick.peterson@alumni.ubc.ca",
     "location": {
       "city": "Minneapolis",
@@ -53,7 +54,12 @@
     },
     {
       "name": "Frameworks",
-      "keywords": ["Next.js", "React", "Micronaut", "Spring"]
+      "keywords": [
+        "Next.js",
+        "React",
+        "Micronaut",
+        "Spring"
+      ]
     },
     {
       "keywords": [
@@ -74,8 +80,11 @@
       "location": "Minneapolis, MN",
       "position": "Senior Software Engineer",
       "startDate": "2025-02",
-      "highlights":[
-        "Architected, developed and maintained microservices that power Samsungs Internernet of Things Platform for 2 million daily active users."
+      "highlights": [
+        "Architected, developed, and maintained backend microservices powering Samsung’s Internet of Things (IoT) platform supporting over 2 million daily active users.",
+        "Collaborated on the redesign of the hub connection and device command processing system, improving cloud reliability and reducing costs.",
+        "Built and optimized distributed microservices leveraging AWS DynamoDB, Redis Streams, and Redis Pub/Sub to achieve low-latency, high-throughput performance.",
+        "Implemented and managed cloud infrastructure on AWS using Terraform, ensuring consistent, secure, and scalable deployments."
       ]
     },
     {

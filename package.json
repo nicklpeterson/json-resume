@@ -6,7 +6,9 @@
   "description": "This is the resume of Nick Peterson.",
   "packageManager": "pnpm@9.2.0",
   "scripts": {
-    "build-html": "resumed export --theme jsonresume-theme-light-classy-responsive --output resume.html"
+    "build": "rm index.html nick-peterson.pdf && pnpm run fetch-html && pnpm run make-pdf",
+    "make-pdf": "node ./scripts/generate-pdf.js",
+    "fetch-html": "curl https://registry.jsonresume.org/nicklpeterson?theme=government-standard | prettier --parser html >> index.html"
   },
   "repository": {
     "type": "git",
@@ -15,8 +17,8 @@
   "keywords": [
     "resume"
   ],
-  "dependencies": {
-    "html2pdf.js": "^0.12.1",
-    "resumed": "^6.1.0"
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "puppeteer": "^24.27.0"
   }
 }

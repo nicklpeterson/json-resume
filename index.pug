@@ -64,7 +64,7 @@ html(lang="en")
       .resume-container {
         max-width: 8.5in;
         margin: 0 auto;
-        padding: 1in;
+        padding: 10%;
         background: #ffffff;
         font-family: "Times New Roman", Georgia, serif;
         font-size: 12pt;
@@ -243,7 +243,7 @@ html(lang="en")
           span.contact-item
             a(href="mailto:nick.peterson@alumni.ubc.ca" aria-label="Email") #{basics.email}
           span.contact-separator(aria-hidden="true") •
-          span.contact-item(aria-label="Location") #{basics.location.city}, #{basics.location.region}, #{basics.location.countryCode}
+          span.contact-item(aria-label="Location") #{basics.location.city}, #{basics.location.region}
           span.contact-separator(aria-hidden="true") •
           each profile, index in basics.profiles
             span.contact-item

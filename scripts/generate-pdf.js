@@ -16,7 +16,7 @@ const bodyHeight = await page.evaluate(() => document.body.scrollHeight);
 
 await page.pdf({
   path: "build/nick-peterson.pdf",
-  height: `${bodyHeight}px`,
+  height: `${bodyHeight + 50}px`,
   preferCSSPageSize: false,
 });
 

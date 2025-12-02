@@ -1,17 +1,13 @@
-### Check out my [Resume](https://registry.jsonresume.org/nicklpeterson?theme=government-standard)
+### Check out my Resume at https://resume.nickpeterson.me/
 
-I'm using [JSON Resume](https://jsonresume.org/getting-started) to render my information as formatted resume. The theme is a url param, so it's super easy to change. No more spending hours formatting resumes.
-
-#### Themes
-
-My current theme is [government-standard](https://registry.jsonresume.org/thomasdavis?theme=government-standard). Check out all the themes at https://jsonresume.org/themes.
+I'm using a [Pug](https://pugjs.org/) template to generate html and pdf files from a json template and deploying the resume on [Cloudflare Pages](https://pages.cloudflare.com/).
 
 #### Build new HTML and PDF files 
 
-This command should be run after changes to the `resume.json` file are reflected on the [live resume](https://registry.jsonresume.org/nicklpeterson?theme=government-standard).
+This command builds new html and pdf resumes from the content in the `resume.json` file.
 
 ```zsh
-pnpm run build
+pnpm build
 ```
 
 

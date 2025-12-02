@@ -6,9 +6,11 @@
   "description": "This is the resume of Nick Peterson.",
   "packageManager": "pnpm@9.2.0",
   "scripts": {
-    "build": "rm index.html nick-peterson.pdf && pnpm run fetch-html && pnpm run make-pdf",
+    "build": "rm -f index.html nick-peterson.pdf && pnpm run make-html && pnpm run make-pdf",
+    "make-html": "node ./scripts/generate-html.js",
     "make-pdf": "node ./scripts/generate-pdf.js",
-    "fetch-html": "curl https://registry.jsonresume.org/nicklpeterson?theme=government-standard | prettier --parser html >> index.html"
+    "open-html": "chrome ./index.html",
+    "open-pdf": "chrome ./nick-peterson.pdf"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   ],
   "devDependencies": {
     "prettier": "^3.6.2",
-    "puppeteer": "^24.27.0"
+    "puppeteer": "^24.27.0",
+    "pug": "^3.0.3"
   }
 }

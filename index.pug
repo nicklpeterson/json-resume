@@ -1,0 +1,291 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Nick Peterson - Resume
+    style.
+      .resume-section {
+        margin-bottom: var(--resume-space-section, 2rem);
+      }
+      @media print {
+        .resume-section {
+          page-break-inside: avoid;
+        }
+      }
+
+      .resume-section-title {
+        font-size: 14pt;
+        font-weight: bold;
+        color: #000000;
+        margin: 18pt 0 12pt 0;
+        padding-bottom: 4pt;
+        border-bottom: 1pt solid #000000;
+        text-transform: uppercase;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+      @media print {
+        .resume-section-title {
+          page-break-after: avoid;
+        }
+      }
+
+      .resume-date-range {
+        font-size: var(--resume-size-small, 10pt);
+        color: var(--resume-color-tertiary, #666);
+        white-space: nowrap;
+      }
+
+      .resume-contact {
+        display: flex;
+        justify-content: center;
+        gap: var(--resume-space-small, 12px);
+        flex-wrap: wrap;
+        font-size: 11pt;
+        color: #000000;
+        text-align: center;
+      }
+      .resume-contact a {
+        font-size: 11pt;
+        color: #000000;
+        text-decoration: underline;
+      }
+
+      .contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .contact-separator {
+        color: var(--resume-color-muted, #999);
+      }
+
+      .resume-container {
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 1in;
+        background: #ffffff;
+        font-family: "Times New Roman", Georgia, serif;
+        font-size: 12pt;
+        color: #000000;
+        line-height: 1.4;
+      }
+      @media print {
+        .resume-container {
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .resume-header {
+        text-align: center;
+        margin-bottom: 24pt;
+        padding-bottom: 12pt;
+        border-bottom: 2pt solid #000000;
+      }
+
+      .resume-name {
+        font-size: 18pt;
+        font-weight: bold;
+        color: #000000;
+        margin: 0 0 6pt 0;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .resume-role {
+        font-size: 12pt;
+        color: #000000;
+        margin-bottom: 8pt;
+        font-weight: normal;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .resume-summary {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000000;
+        margin: 12pt 0 0 0;
+        text-align: left;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .experience-item {
+        margin-bottom: 18pt;
+        page-break-inside: avoid;
+      }
+      .experience-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .experience-header {
+        margin-bottom: 6pt;
+      }
+
+      .experience-role {
+        font-size: 13pt;
+        font-weight: bold;
+        color: #000000;
+        margin: 0 0 3pt 0;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .experience-company {
+        font-size: 12pt;
+        color: #000000;
+        font-weight: normal;
+        margin-bottom: 3pt;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .experience-meta {
+        font-size: 11pt;
+        color: #111827;
+        font-weight: normal;
+        font-style: italic;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .experience-list {
+        margin: 6pt 0 0 18pt;
+        padding: 0;
+        list-style-type: disc;
+      }
+      .experience-list li {
+        margin: 3pt 0;
+        color: #000000;
+        line-height: 1.4;
+        font-size: 12pt;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .education-item {
+        margin-bottom: 12pt;
+        page-break-inside: avoid;
+      }
+      .education-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .education-institution {
+        font-size: 13pt;
+        font-weight: bold;
+        color: #000000;
+        margin: 0 0 3pt 0;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .education-degree {
+        font-size: 12pt;
+        color: #000000;
+        margin-bottom: 3pt;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .education-meta {
+        font-size: 11pt;
+        color: #111827;
+        font-style: italic;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .skills-item {
+        margin-bottom: 12pt;
+      }
+      .skills-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .skills-label {
+        font-size: 12pt;
+        font-weight: bold;
+        color: #000000;
+        margin: 0 0 3pt 0;
+        display: inline;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+
+      .skills-values {
+        font-size: 12pt;
+        color: #000000;
+        font-weight: normal;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+    style.
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        font-family: "Times New Roman", Georgia, serif;
+      }
+      @media print {
+        body {
+          background: white;
+        }
+        @page {
+          margin: 1in;
+        }
+      }
+
+  body
+    .resume-container
+      header.resume-header
+        h1.resume-name #{basics.name}
+        .resume-role #{basics.label}
+        .resume-contact
+          span.contact-item
+            a(href="mailto:nick.peterson@alumni.ubc.ca" aria-label="Email") #{basics.email}
+          span.contact-separator(aria-hidden="true") •
+          span.contact-item(aria-label="Location") #{basics.location.city}, #{basics.location.region}, #{basics.location.countryCode}
+          span.contact-separator(aria-hidden="true") •
+          each profile in basics.profiles
+            span.contact-item
+              a(
+                href=profile.url
+                aria-label=profile.network
+                target="_blank"
+                rel="noopener noreferrer"
+              ) #{profile.network}
+            span.contact-separator(aria-hidden="true") •        
+
+      section.resume-section
+        p.resume-summary #{basics.summary}
+
+      section.resume-section
+        h2.resume-section-title Professional Experience
+
+        each experience in work 
+          .experience-item
+            .experience-header
+              h3.experience-role #{experience.position}
+              .experience-company #{experience.name}
+              .experience-meta 
+                span.resume-date-range #{experience.startDate} - #{experience.endDate}
+            ul.experience-list
+              each highlight in experience.highlights
+                li=highlight
+
+      section.resume-section
+        h2.resume-section-title Education
+
+        each item in education 
+          .education-item 
+            h3.education-institution #{item.institution}
+            .education-degree #{item.studyType} in #{item.area}
+            .education-meta
+              span.resume-date-range #{item.startDate} - #{item.endDate}
+
+      section.resume-section
+        h2.resume-section-title Professional Skills
+
+        each skill in skills
+          .skills-item 
+            h4.skills-label #{skill.name + ": "}
+            span.skills-values #{skill.keywords.join(", ")}

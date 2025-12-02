@@ -25,15 +25,15 @@
   },
   "education": [
     {
-      "startDate": "2018-09",
-      "endDate": "2021-07",
+      "startDate": "September 2018",
+      "endDate": "July 2021",
       "area": "Computer Science",
-      "studyType": "Bachelors",
+      "studyType": "Bachelor",
       "institution": "The University of British Columbia"
     },
     {
-      "startDate": "2011-09",
-      "endDate": "2015-05",
+      "startDate": "September 2011",
+      "endDate": "May 2015",
       "area": "Mathematics & Economics",
       "studyType": "Bachelors",
       "institution": "The University of Minnesota Duluth"
@@ -79,9 +79,10 @@
       "name": "Samsung Smartthings",
       "location": "Minneapolis, MN",
       "position": "Senior Software Engineer",
-      "startDate": "2025-02",
+      "startDate": "February 2025",
+      "endDate": "Present",
       "highlights": [
-        "Architected, developed, and maintained backend microservices powering Samsung’s Internet of Things (IoT) platform supporting over 2.5 million daily active users.",
+        "Architected, developed, and maintained backend microservices powering Samsung’s Internet of Things platform supporting over 2.5 million daily active users.",
         "Collaborated on the redesign of the hub connection and device command processing system, improving cloud reliability and reducing costs.",
         "Built and optimized distributed microservices leveraging AWS DynamoDB, Redis Caching, and Redis Streams to achieve low-latency, high-throughput performance.",
         "Implemented and managed cloud infrastructure on AWS using Terraform, ensuring consistent, secure, and scalable deployments.",

@@ -11,9 +11,7 @@ const targetPath = root("build/index.html")
 const rawConfig = fs.readFileSync(resumeConfigPath);
 const config = JSON.parse(rawConfig);
 
-const html = pug.compileFile(pugFilePath, {
-  pretty: true,
-});
+const html = pug.compileFile(pugFilePath);
 
 if (!fs.existsSync(buildDirPath)) {
   fs.mkdirSync(buildDirPath)

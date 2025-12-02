@@ -6,7 +6,7 @@
   "description": "This is the resume of Nick Peterson.",
   "packageManager": "pnpm@9.2.0",
   "scripts": {
-    "build": "rm -f index.html nick-peterson.pdf && pnpm run make-html && pnpm run make-pdf",
+    "build": "rm -rf build && rm -f index.html nick-peterson.pdf && pnpm run make-html && pnpm run make-pdf",
     "make-html": "node ./scripts/generate-html.js",
     "make-pdf": "node ./scripts/generate-pdf.js",
     "open-html": "chrome ./index.html",

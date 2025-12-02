@@ -1,9 +1,22 @@
-import fs from 'fs'
-import pug from 'pug'
+import fs from "fs";
+import pug from "pug";
 
-const rawConfig = fs.readFileSync(`${import.meta.dirname}/../resume.json`)
-const config = JSON.parse(rawConfig)
+const root = (path) => `${import.meta.dirname}/../${path}`
 
-const html = pug.compileFile(`${import.meta.dirname}/../index.pug`, { pretty: true })
+const pugFilePath = root("index.pug")
+const resumeConfigPath = root("resume.json")
+const buildDirPath = root("build")
+const targetPath = root("build/index.html")
 
-fs.writeFileSync(`${import.meta.dirname}/../index.html`, html(config))
+const rawConfig = fs.readFileSync(resumeConfigPath);
+const config = JSON.parse(rawConfig);
+
+const html = pug.compileFile(pugFilePath, {
+  pretty: true,
+});
+
+if (!fs.existsSync(buildDirPath)) {
+  fs.mkdirSync(buildDirPath)
+}
+
+fs.writeFileSync(targetPath, html(config));

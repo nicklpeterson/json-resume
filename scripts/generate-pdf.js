@@ -6,7 +6,7 @@ const browser = await puppeteer.launch({
 });
 const page = await browser.newPage();
 
-const localHtmlPath = path.resolve(`${import.meta.dirname}/../index.html`);
+const localHtmlPath = path.resolve(`${import.meta.dirname}/../build/index.html`);
 
 await page.goto(`file://${localHtmlPath}`, {
   waitUntil: "networkidle2",
@@ -15,7 +15,7 @@ await page.goto(`file://${localHtmlPath}`, {
 const bodyHeight = await page.evaluate(() => document.body.scrollHeight);
 
 await page.pdf({
-  path: "nick-peterson.pdf",
+  path: "build/nick-peterson.pdf",
   height: `${bodyHeight}px`,
   preferCSSPageSize: false,
 });

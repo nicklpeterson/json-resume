@@ -3,7 +3,7 @@
     "name": "Nick Peterson",
     "label": "Full Stack Software Engineer",
     "image": "https://avatars.githubusercontent.com/u/45719932",
-    "summary": "Results-driven Software Engineer with over five years of experience designing and delivering large-scale, high-performance systems across e-commerce and IoT platforms. Skilled in building distributed microservices and cloud infrastructure using Kotlin, Micronaut, AWS, and Terraform, as well as modern front-end technologies including React, Next.js, and TypeScript. Known for collaborating across engineering, product, and design teams to deliver measurable business outcomes—such as facilitating $250M in annual business to business gift card sales revenue at Target and improving reliability for millions of Samsung SmartThings users. Driven by a passion for learning, collaboration, and crafting scalable, maintainable systems.",
+    "summary": "Results-driven Software Engineer with over five years of experience designing and delivering large-scale, high-performance systems across e-commerce and IoT platforms. I am driven by a passion for learning, collaboration, and crafting scalable, maintainable systems and would love the opportunity to contribute to your team!",
     "email": "nick.peterson@alumni.ubc.ca",
     "location": {
       "city": "Minneapolis",
@@ -81,10 +81,11 @@
       "position": "Senior Software Engineer",
       "startDate": "2025-02",
       "highlights": [
-        "Architected, developed, and maintained backend microservices powering Samsung’s Internet of Things (IoT) platform supporting over 2 million daily active users.",
+        "Architected, developed, and maintained backend microservices powering Samsung’s Internet of Things (IoT) platform supporting over 2.5 million daily active users.",
         "Collaborated on the redesign of the hub connection and device command processing system, improving cloud reliability and reducing costs.",
-        "Built and optimized distributed microservices leveraging AWS DynamoDB, Redis Streams, and Redis Pub/Sub to achieve low-latency, high-throughput performance.",
-        "Implemented and managed cloud infrastructure on AWS using Terraform, ensuring consistent, secure, and scalable deployments."
+        "Built and optimized distributed microservices leveraging AWS DynamoDB, Redis Caching, and Redis Streams to achieve low-latency, high-throughput performance.",
+        "Implemented and managed cloud infrastructure on AWS using Terraform, ensuring consistent, secure, and scalable deployments.",
+        "Developed new features with an emphasis on feature flagging and monitoring systems to reduce risk during deployments and feature rollouts."
       ]
     },
     {
@@ -95,8 +96,9 @@
       "startDate": "2021-08",
       "endDate": "2025-01",
       "highlights": [
-        "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. Including external, internal, and agent facing web apps. Our platform went live in June 2024 and is on track to facilitate over $250 million in revenue this year.",
+        "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. Including external, internal, and agent facing web apps. Our platform went live in June 2024 and facilitated over $250 million in revenue that year.",
         "Implemented User Interfaces using Next.JS, React, Typescript, React Query, and Webpack.",
+        "Developed a custom Oauth2 integration with Target's Guest Security Platform that facilitated server side rendering and automatic routing based on a users profile status.",
         "Developed a PCI compliant micro-frontend that was built using Webpack Module Federation and deployed as a static javascript bundle to Google Cloud Platform.",
         "Designed and implemented frontend and backend performance monitoring and alerting patterns using InfluxDB, Kibana, Grafana, and Shuttle IO.",
         "Developed REST API Microservices using Micronaut and Kotlin.",

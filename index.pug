@@ -245,7 +245,7 @@ html(lang="en")
           span.contact-separator(aria-hidden="true") •
           span.contact-item(aria-label="Location") #{basics.location.city}, #{basics.location.region}, #{basics.location.countryCode}
           span.contact-separator(aria-hidden="true") •
-          each profile in basics.profiles
+          each profile, index in basics.profiles
             span.contact-item
               a(
                 href=profile.url
@@ -253,7 +253,8 @@ html(lang="en")
                 target="_blank"
                 rel="noopener noreferrer"
               ) #{profile.network}
-            span.contact-separator(aria-hidden="true") •        
+            if index < basics.profiles.length - 1
+              span.contact-separator(aria-hidden="true") •        
 
       section.resume-section
         p.resume-summary #{basics.summary}

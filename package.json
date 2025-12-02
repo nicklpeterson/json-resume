@@ -9,8 +9,8 @@
     "build": "rm -rf build && rm -f index.html nick-peterson.pdf && pnpm run make-html && pnpm run make-pdf",
     "make-html": "node ./scripts/generate-html.js",
     "make-pdf": "node ./scripts/generate-pdf.js",
-    "open-html": "chrome ./index.html",
-    "open-pdf": "chrome ./nick-peterson.pdf"
+    "open-html": "chrome ./build/index.html",
+    "open-pdf": "chrome ./build/nick-peterson.pdf"
   },
   "repository": {
     "type": "git",

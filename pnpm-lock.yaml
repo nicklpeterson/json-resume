@@ -7,14 +7,13 @@ settings:
 importers:
 
   .:
-    dependencies:
-      pug:
-        specifier: ^3.0.3
-        version: 3.0.3
     devDependencies:
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
+      pug:
+        specifier: ^3.0.3
+        version: 3.0.3
       puppeteer:
         specifier: ^24.27.0
         version: 24.27.0

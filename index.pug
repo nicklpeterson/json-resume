@@ -8,11 +8,6 @@ html(lang="en")
       .resume-section {
         margin-bottom: var(--resume-space-section, 2rem);
       }
-      @media print {
-        .resume-section {
-          page-break-inside: avoid;
-        }
-      }
 
       .resume-section-title {
         font-size: 14pt;
@@ -23,11 +18,6 @@ html(lang="en")
         border-bottom: 1pt solid #000000;
         text-transform: uppercase;
         font-family: "Times New Roman", Georgia, serif;
-      }
-      @media print {
-        .resume-section-title {
-          page-break-after: avoid;
-        }
       }
 
       .resume-date-range {
@@ -61,8 +51,23 @@ html(lang="en")
         color: var(--resume-color-muted, #999);
       }
 
+      @media screen and (max-width: 800px) {
+        .hide-on-mobile {
+          display: none;
+        }
+
+        .resume-container {
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        .resume-container {
+          max-width: 80%;
+        }
+      }
+
       .resume-container {
-        max-width: 8.5in;
         margin: 0 auto;
         padding: 10%;
         background: #ffffff;
@@ -70,12 +75,6 @@ html(lang="en")
         font-size: 12pt;
         color: #000000;
         line-height: 1.4;
-      }
-      @media print {
-        .resume-container {
-          padding: 0;
-          margin: 0;
-        }
       }
 
       .resume-header {
@@ -213,24 +212,37 @@ html(lang="en")
         font-weight: normal;
         font-family: "Times New Roman", Georgia, serif;
       }
+
     style.
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
+
       body {
         margin: 0;
         padding: 0;
         background: #ffffff;
         font-family: "Times New Roman", Georgia, serif;
       }
+
       @media print {
+        .experience-item {
+          page-break-inside: avoid;
+        }
+
         body {
           background: white;
         }
+
         @page {
           margin: 1in;
+        }
+
+        .resume-container {
+          padding: 0;
+          margin: 0;
         }
       }
 
@@ -242,11 +254,11 @@ html(lang="en")
         .resume-contact
           span.contact-item
             a(href="mailto:nick.peterson@alumni.ubc.ca" aria-label="Email") #{basics.email}
-          span.contact-separator(aria-hidden="true") •
-          span.contact-item(aria-label="Location") #{basics.location.city}, #{basics.location.region}
-          span.contact-separator(aria-hidden="true") •
+          span.hide-on-mobile.contact-separator(aria-hidden="true") •
+          span.hide-on-mobile.contact-item(aria-label="Location") #{basics.location.city}, #{basics.location.region}
+          span.hide-on-mobile.contact-separator(aria-hidden="true") •
           each profile, index in basics.profiles
-            span.contact-item
+            span.hide-on-mobile.contact-item
               a(
                 href=profile.url
                 aria-label=profile.network
@@ -254,7 +266,7 @@ html(lang="en")
                 rel="noopener noreferrer"
               ) #{profile.network}
             if index < basics.profiles.length - 1
-              span.contact-separator(aria-hidden="true") •        
+              span.hide-on-mobile.contact-separator(aria-hidden="true") •        
 
       section.resume-section
         p.resume-summary #{basics.summary}

@@ -109,7 +109,7 @@ html(lang="en")
 
       .experience-item {
         margin-bottom: 18pt;
-        page-break-inside: avoid;
+        //- page-break-inside: avoid;
       }
       .experience-item:last-child {
         margin-bottom: 0;
@@ -216,17 +216,17 @@ html(lang="en")
       }
 
       @media print {
-        .experience-item {
-          page-break-inside: avoid;
-        }
+        //- .experience-item {
+        //-   page-break-inside: avoid;
+        //- }
 
         body {
           background: white;
         }
 
-        //- @page {
-        //-   margin: 1in;
-        //- }
+        @page {
+          margin: 1in;
+        }
 
         .resume-container {
           padding: 0;

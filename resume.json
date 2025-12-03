@@ -5,8 +5,9 @@
     "image": "https://avatars.githubusercontent.com/u/45719932",
     "summary": "Results-driven Software Engineer with over five years of experience designing and delivering large-scale, high-performance systems across e-commerce and IoT platforms. My passion for learning, collaboration, and mentorship will be a valuable asset to your team.",
     "email": "nick.peterson@alumni.ubc.ca",
+    "phone": "(651) 214-0271",
     "location": {
-      "city": "Minneapolis",
+      "city": "St. Paul",
       "region": "Minnesota",
       "countryCode": "US"
     },
@@ -62,15 +63,14 @@
       ]
     },
     {
+      "name": "Devops",
       "keywords": [
         "Google Cloud",
         "Terraform",
         "Fastly CDN",
         "Vela",
         "Automated CI/CD Pipelines"
-      ],
-      "level": "Senior",
-      "name": "Devops"
+      ]
     }
   ],
   "work": [
@@ -106,8 +106,8 @@
         "Led the production environment set up and roll out effort. We had a clean production go live with no major incidents.",
         "Led the security development efforts including setting up frontend and backend controls to prevent known attack vectors. Prioritizing secure development from the beginning resulted in our PEN tests coming back with no major findings, saving us time and resources.",
         "Designed and built a Kafka filtering service that allowed the team to test our data migration in a \"Go-Live\" environment while ensuring that production PI data would not leak into lower environments.",
-        "Supported the team through mentorship of Interns and Engineers.",
-        "Developed two side project tools, git1s and git-history, that are used by engineers throughout Target Tech to more effectively use Github."
+        "Supported the team through montoring interns and engineers.",
+        "Developed two side project tools, Git1s and Git History, that are used by engineers throughout Target Tech to more effectively use Github."
       ]
     },
     {

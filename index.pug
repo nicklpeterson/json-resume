@@ -243,6 +243,8 @@ html(lang="en")
           span.contact-item
             a(href="mailto:nick.peterson@alumni.ubc.ca" aria-label="Email") #{basics.email}
           span.hide-on-mobile.contact-separator(aria-hidden="true") •
+          span.contact-item #{basics.phone}
+          span.hide-on-mobile.contact-separator(aria-hidden="true") •
           span.hide-on-mobile.contact-item(aria-label="Location") #{basics.location.city}, #{basics.location.region}
           span.hide-on-mobile.contact-separator(aria-hidden="true") •
           each profile, index in basics.profiles

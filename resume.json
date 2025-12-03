@@ -97,7 +97,7 @@
       "startDate": "2021-08",
       "endDate": "2025-01",
       "highlights": [
-        "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. Including external, internal, and agent facing web apps. Our platform went live in June 2024 and facilitated over $250 million in revenue that year.",
+        "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of a new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. The project including external, internal, and agent facing web apps. Our platform went live in June 2024 and facilitated over $200 million in revenue that year.",
         "Implemented User Interfaces using Next.JS, React, Typescript, React Query, and Webpack.",
         "Developed a custom Oauth2 integration with Target's Guest Security Platform that facilitated server side rendering and automatic routing based on a users profile status.",
         "Developed a PCI compliant micro-frontend that was built using Webpack Module Federation and deployed as a static javascript bundle to Google Cloud Platform.",

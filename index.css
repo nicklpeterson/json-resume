@@ -34,6 +34,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 8% 25% 0 25%;
+  }
+}
+
 @media print {
   body {
     background: white;

@@ -97,8 +97,8 @@
       "name": "Target Corporation",
       "location": "Minneapolis, MN",
       "position": "Lead Software Engineer",
-      "startDate": "2021-08",
-      "endDate": "2025-01",
+      "startDate": "August 2021",
+      "endDate": "January 2025",
       "highlights": [
         "Collaborated with a team of business leaders, engineers, designers, and product owners in the design and implementation of a new, built from scratch, e-commerce platform for the bulk purchase of Gift Cards by Business Clients. The project including external, internal, and agent facing web apps. Our platform went live in June 2024 and facilitated over $200 million in revenue that year.",
         "Implemented User Interfaces using Next.js, React, Typescript, React Query, and Webpack.",
@@ -118,8 +118,8 @@
       "name": "Lively Apps",
       "location": "Vancouver, BC",
       "position": "Full Stack Developer",
-      "startDate": "2020-01",
-      "endDate": "2021-09",
+      "startDate": "January 2020",
+      "endDate": "September 2021",
       "highlights": [
         "Developed and maintained apps currently available on the Atlassian marketplace for Confluence and Jira. Including Pocket Query, Task Reminder, Hide Elements, Usage Statistics for Confluence and more.",
         "Win second place in the 2020 Codegeist hackathon for the Lively Recorder.",
@@ -137,8 +137,8 @@
       "website": "https://www.garmin.com/en-US/",
       "name": "Garmin",
       "position": "Software Quality Assurance Intern",
-      "startDate": "2019-09",
-      "endDate": "2019-12"
+      "startDate": "September",
+      "endDate": "December 2019"
     }
   ]
 }

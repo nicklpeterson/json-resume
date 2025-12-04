@@ -1,20 +1,26 @@
 import fs from "fs";
-import pug from "pug";
+import nunjucks from "nunjucks";
 
-const root = (path) => `${import.meta.dirname}/../${path}`
+const root = (path) => `${import.meta.dirname}/../${path}`;
 
-const pugFilePath = root("index.pug")
-const resumeConfigPath = root("resume.json")
-const buildDirPath = root("build")
-const targetPath = root("build/index.html")
+const templateFilePath = root("index.njk");
+const resumeConfigPath = root("resume.json");
+const cssFilePath = root("index.css");
+const buildDirPath = root("build");
+const htmlTargetPath = root("build/index.html");
+const cssTargetPath = root("build/index.css");
+
+const cssFile = fs.readFileSync(cssFilePath);
 
 const rawConfig = fs.readFileSync(resumeConfigPath);
 const config = JSON.parse(rawConfig);
 
-const html = pug.compileFile(pugFilePath);
+nunjucks.configure(".", { autoescape: true });
+const output = nunjucks.render(templateFilePath, config);
 
 if (!fs.existsSync(buildDirPath)) {
-  fs.mkdirSync(buildDirPath)
+  fs.mkdirSync(buildDirPath);
 }
 
-fs.writeFileSync(targetPath, html(config));
+fs.writeFileSync(htmlTargetPath, output);
+fs.writeFileSync(cssTargetPath, cssFile);

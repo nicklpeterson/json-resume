@@ -28,16 +28,19 @@
     {
       "startDate": "September 2018",
       "endDate": "July 2021",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "institution": "The University of British Columbia"
+      "institution": "The University of British Columbia",
+      "highlights": [
+        "Bachelor in Computer Science"
+      ]
     },
     {
       "startDate": "September 2011",
       "endDate": "May 2015",
-      "area": "Mathematics & Economics",
-      "studyType": "Bachelors",
-      "institution": "The University of Minnesota Duluth"
+      "institution": "The University of Minnesota Duluth",
+      "highlights": [
+        "Bachelor of Science in Methematics",
+        "Bachelor of Arts in Economics"
+      ]
     }
   ],
   "skills": [

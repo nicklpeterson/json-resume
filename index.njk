@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick Peterson - Resume</title>
+    <link rel="stylesheet" href="resume.css" />
+  </head>
+
+  <body>
+    <header class="resume-header">
+      <h1 class="name">{{ basics.name }}</h1>
+      <h3 class="role">{{ basics.label }}</h3>
+      <div class="contact-info">
+        <span class="contact-item">
+          <a href="mailto:nick.peterson@alumni.ubc.ca" aria-label="Email">
+            {{ basics.email }}
+          </a>
+        </span>
+        <span class="hide-on-mobile contact-separator" aria-hidden="true">
+          •
+        </span>
+        <span class="hide-on-mobile contact-item" aria-label="Location">
+          {{ basics.location.city }}, {{ basics.location.region }}
+        </span>
+
+        {% for profile in basics.profiles %}
+        <span class="hide-on-mobile contact-separator" aria-hidden="true">
+          •
+        </span>
+        <span class="hide-on-mobile contact-item">
+          <a
+            href="{{ profile.url }}"
+            aria-label="{{ profile.network }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ profile.network }}
+          </a>
+        </span>
+        {% endfor %}
+      </div>
+    </header>
+
+    <hr class="header-divider" />
+
+    <section class="resume-section">
+      <p class="resume-summary">{{ basics.summary }}</p>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="resume-section-title border-bottom">
+        Professional Experience
+      </h2>
+
+      {% for experience in work %}
+      <div class="experience-item">
+        <div class="experience-header">
+          <p class="experience-role">{{ experience.position }}</p>
+          <p class="experience-company">{{ experience.name }}</p>
+          <span class="resume-date-range"
+            >{{ experience.startDate }} - {{ experience.endDate }}</span
+          >
+        </div>
+
+        <ul class="experience-list">
+          {% for highlight in experience.highlights %}
+          <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section class="resume-section">
+      <h2 class="resume-section-title">Education</h2>
+
+      {% for item in education %}
+      <div class="education-item">
+        <h3 class="education-institution">{{ item.institution }}</h3>
+        {% for highlight in item.highlights %}
+        <p class="education-degree">{{ highlight }}</p>
+        {% endfor %}
+        <span class="resume-date-range"
+          >{{ item.startDate }} - {{ item.endDate }}</span
+        >
+      </div>
+      {% endfor %}
+    </section>
+
+    <section class="resume-section">
+      <h2 class="resume-section-title">Professional Skills</h2>
+      {% for skill in skills %}
+      <div class="skills-item">
+        <h4 class="skills-label">{{ skill.name }}:</h4>
+        <span class="skills-values"> {{ skill.keywords | join(", ")}} </span>
+      </div>
+      {% endfor %}
+    </section>
+  </body>
+</html>

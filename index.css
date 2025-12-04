@@ -1,0 +1,171 @@
+:root {
+  --font-color: #000000;
+  --border-color: #000000;
+  --font-color-muted: #999;
+  --date-range-color: #666;
+  --large-text: 18pt;
+  --medium-text: 14pt;
+  --small-text: 11pt;
+  --date-text: 10pt;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: var(--font-color);
+  width: 100%;
+  font-size: var(--small-text);
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 5%;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding: 8% 15% 0 15%;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  @page {
+    margin: 1in;
+  }
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.header-divider {
+  border-top: 2px solid var(--border-color);
+  margin-top: 20px;
+}
+
+.border-bottom {
+  border-bottom: 1pt solid var(--border-color);
+}
+
+.name {
+  font-size: var(--large-text);
+  font-weight: bold;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.role {
+  margin-bottom: 8pt;
+  font-weight: normal;
+}
+
+.contact-info a {
+  color: var(--font-color);
+  text-decoration: underline;
+}
+
+.contact-item {
+  align-items: center;
+  gap: 4px;
+}
+
+.contact-separator {
+  color: var(--font-color-muted);
+  margin: 0 5px 0 5px;
+}
+
+.resume-section-title {
+  font-size: var(--medium-text);
+  font-weight: bold;
+  border-bottom: 1pt solid #000000;
+  text-transform: uppercase;
+  margin: 18pt 0 12pt 0;
+  padding-bottom: 4pt;
+}
+
+.resume-date-range {
+  font-size: var(--date-text);
+  font-weight: normal;
+  font-style: italic;
+  color: var(--date-range-color);
+}
+
+.experience-item {
+  margin-bottom: 18pt;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.experience-header {
+  margin-bottom: 6pt;
+
+  .experience-role {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .experience-company {
+    font-weight: normal;
+    margin-bottom: 3pt;
+    margin-block-start: 6px;
+  }
+}
+
+.experience-list {
+  margin: 6pt 0 0 18pt;
+  padding: 0;
+  list-style-type: disc;
+
+  li {
+    margin: 3pt 0;
+  }
+}
+
+.education-item {
+  margin-bottom: 12pt;
+  page-break-inside: avoid;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.education-institution {
+  margin: 0 0 3pt 0;
+}
+
+.education-degree {
+  margin-block-start: 6px;
+  margin-bottom: 3pt;
+}
+
+.skills-item {
+  margin-bottom: 12pt;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.skills-label {
+  font-weight: bold;
+  margin: 0 0 3pt 0;
+  display: inline;
+}
+
+.skills-values {
+  font-weight: normal;
+}

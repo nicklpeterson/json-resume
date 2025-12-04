@@ -48,6 +48,10 @@ body {
   @page {
     margin: 1in;
   }
+
+  .education-section {
+    page-break-inside: avoid;
+  }
 }
 
 header {

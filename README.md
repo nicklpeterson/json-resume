@@ -1,4 +1,6 @@
-### Check out my Resume at https://resume.nickpeterson.me/
+### Check out my Resume 
+- Web: https://resume.nickpeterson.me/
+- pdf: https://resume.nickpeterson.me/nick-peterson.pdf
 
 I'm using a [Nunjucks](https://mozilla.github.io/nunjucks/) template to generate html and pdf files from a json template and deploying the resume on [Cloudflare Pages](https://pages.cloudflare.com/).
 

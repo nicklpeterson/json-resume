@@ -78,12 +78,23 @@
   ],
   "work": [
     {
+      "website": "https://target.com/", 
+      "name": "Target Corporation",
+      "location": "Minneapolis, MN",
+      "position": "Lead Cybersecurity Engineer",
+      "startDate": "March 2026",
+      "endDate": "Present",
+      "highlights": [
+        "Developed and maintained OAuth authorization infrastructure supporting secure authentication and authorization flows across Target Corporation’s digital platforms."
+      ]
+    }
+    {
       "website": "https://www.samsung.com/us/smartthings/",
       "name": "Samsung Smartthings",
       "location": "Minneapolis, MN",
       "position": "Senior Software Engineer",
-      "startDate": "February 2025",
-      "endDate": "Present",
+      "startDate": "January 2025",
+      "endDate": "March 2026",
       "highlights": [
         "Designed, developed, and maintained backend microservices powering Samsung’s Internet of Things platform supporting over 2.5 million daily active users.",
         "Collaborated on the redesign of the hub connection and device command processing system, improving cloud reliability and reducing costs.",

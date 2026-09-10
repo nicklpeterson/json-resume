@@ -85,7 +85,9 @@
       "startDate": "March 2026",
       "endDate": "Present",
       "highlights": [
-        "Developed and maintained OAuth authorization infrastructure supporting secure authentication and authorization flows across Target Corporation’s digital platforms."
+        "Developed and maintained OAuth authorization infrastructure supporting secure authentication and authorization flows across Target Corporation’s digital platforms.",
+        "Developed a new AI powered static analysis tool that finds and reports security vulnerabilities. It has been used to identify and fix several critical vulnerabilities before they were exploited by threat actors.",
+        "Mentored engineers in the Target Tech Leadership Program."
       ]
     },
     {
